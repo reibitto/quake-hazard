@@ -169,6 +169,7 @@ a:active {
 
 #resultsContainer {
     display: flex;
+    flex-direction: row;
 }
 
 .resultsPadding {
@@ -176,15 +177,15 @@ a:active {
 }
 
 #resultsMain {
-    overflow: scroll;
-    pointer-events: auto;
     height: 95vh;
+    pointer-events: auto;
+    overflow: scroll;
+    display: inline-block;
 }
 
 #searchResults {
     border: 1px solid #000;
     opacity: 0.9;
-    display: inline-block;
 }
 
 #searchResults tr:nth-child(even) {
