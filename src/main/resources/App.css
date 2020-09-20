@@ -180,7 +180,7 @@ a:active {
     height: 95vh;
     pointer-events: auto;
     overflow: scroll;
-    display: inline-block;
+    white-space: nowrap;
 }
 
 #searchResults {
