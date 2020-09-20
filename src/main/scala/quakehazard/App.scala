@@ -58,13 +58,10 @@ object Globals extends js.Object {
             search(e.target.asInstanceOf[HTMLInputElement].value)
           }
         ),
-        div(id := "resultsContainer")(
+        div(id := "resultsContainer", style := js.Dynamic.literal(display = if (state.results.isEmpty) "none" else "block"))(
           div(className := "resultsPadding"),
           div(id := "resultsMain")(
-            table(
-              id := "searchResults",
-              style := js.Dynamic.literal(display = if (state.results.isEmpty) "none" else "inline-block")
-            )(
+            table(id := "searchResults")(
               thead(
                 tr(
                   th(),
