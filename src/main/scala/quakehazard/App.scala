@@ -94,12 +94,12 @@ object Globals extends js.Object {
                     td(className := s"gradeText grade${area.collapseSafetyGrade}")(area.collapseSafetyGrade),
                     td(area.fireDamagedBuildingsPerHectare),
                     td(area.fireSafetyRank),
-                    td(className := s"gradeText grade${area.collapseSafetyGrade}")(area.fireSafetyGrade),
+                    td(className := s"gradeText grade${area.fireSafetyGrade}")(area.fireSafetyGrade),
                     td(area.rescueDifficultyRank),
-                    td(className := s"gradeText grade${area.collapseSafetyGrade}")(area.rescueDifficultyGrade),
+                    td(className := s"gradeText grade${area.rescueDifficultyGrade}")(area.rescueDifficultyGrade),
                     td(area.totalDangerPerHectare),
                     td(area.totalDangerRank),
-                    td(className := s"gradeText grade${area.collapseSafetyGrade}")(area.totalDangerGrade)
+                    td(className := s"gradeText grade${area.totalDangerGrade}")(area.totalDangerGrade)
                   )
                 }
               )
